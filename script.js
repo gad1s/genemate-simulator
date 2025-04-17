@@ -55,12 +55,13 @@ let currentStage = "a";
 
 // Entry point
 function renderIntro() {
-    document.body.style.background = "#F7C8D4";
+    document.body.style.background = "#f7c8d4";
     document.body.style.backgroundImage = "url('static/bg-main.png')";
+    document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundAttachment = "fixed";
+
     app.innerHTML = `
       <div class="fade-in">
       <h1>GeneMate Life Simulator</h1>
@@ -131,10 +132,8 @@ function renderPartnerOptions(stage) {
   
     // Reset background
     document.body.style.background = "#F7C8D4";
-    document.body.style.backgroundImage = "";
-    document.body.style.backgroundSize = "";
-    document.body.style.backgroundPosition = "";
-    document.body.style.backgroundRepeat = "";
+    document.body.style.backgroundImage = "none";
+
   
     const labels = ["A", "B"];
   

@@ -1,3 +1,18 @@
+const preloadImages = [
+  'static/1outcome.png',
+  'static/2outcome.png',
+  'static/3outcome.png',
+  'static/4outcome.png',
+  'static/5outcome.png',
+  'static/6outcome.png'
+];
+
+preloadImages.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});
+
+
 const clickSound = new Audio('static/click.mp3');
 clickSound.volume = 0.4;
 

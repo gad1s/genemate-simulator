@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: url('/static/bg-main.png') no-repeat center center fixed;
+    background: url('static/bg-main.png') no-repeat center center fixed;
     background-size: cover;
     color: #2C2C2C;
     display: flex;

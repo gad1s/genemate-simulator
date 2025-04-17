@@ -1,0 +1,238 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('/static/bg-main.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  #app {
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  h1, h2 {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background: linear-gradient(90deg, #F7C8D4, #F7C8D4);
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 1rem;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .partner-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #FAFAFA;
+  }
+  
+  .outcome-card {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #app {
+    width: 90%;
+    max-width: 900px;
+    max-height: 80vh;
+    margin: 5vh auto;
+    padding: 2rem 3rem;
+    background-color: rgba(255, 255, 255, 0.85); /* <- transparent white */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-y: auto;
+  }
+  
+  
+  @media (min-width: 1024px) {
+    #app {
+      padding: 3rem 4rem;
+    }
+  }
+
+  #app {
+    background-color: rgba(255, 255, 255, 0.85); /* White with 85% opacity */
+  }
+  
+h1, h2, h3 {
+  font-weight: 600;
+}
+.subheading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  .intro-description {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .dna-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem auto;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .genetic-score {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #6C63FF;
+    font-weight: 600;
+  }
+
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeSlideUp 0.6s ease-out;
+  }
+  
+  .traits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  
+  .trait-btn {
+    background-color: #fff;
+    border: 2px solid #888;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+  }
+  
+  .trait-btn:hover {
+    background-color: #f0e9ec;
+  }
+  
+  .trait-btn.selected {
+    background-color: #f7c8d4;
+    border-color: #aa4c6e;
+    color: #222;
+    font-weight: bold;
+  }
+
+.continue-btn {
+  border: 2px solid #aa4c6e;
+  background-color: white;
+  color: #aa4c6e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.continue-btn:hover {
+  background-color: #f7c8d4;
+  color: #333;
+}
+.choice-btn {
+    background-color: white;
+    color: #aa4c6e;
+    border: 2px solid #aa4c6e;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .choice-btn:hover {
+    background-color: #f7c8d4;
+    color: #333;
+    border-color: #922f55;
+  }
+  
+  .action-btn {
+    background-color: #f7c8d4;
+    color: #333;
+    border: 2px solid #aa4c6e;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: #f3aebe;
+    color: #111;
+  }
+  
+  .reflection-btn {
+    background-color: white;
+    color: #aa4c6e;
+    border: 2px solid #aa4c6e;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .reflection-btn:hover {
+    background-color: #f7c8d4;
+    color: #333;
+  }
+  

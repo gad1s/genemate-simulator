@@ -146,13 +146,12 @@ function renderPartnerOptions(stage) {
     currentStage = stage;
   
     // Reset background
-    document.body.style.background = "#F7C8D4";
+    document.body.style.background = "#f7c8d4";
     document.body.style.backgroundImage = "url('static/bg-main.png')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundAttachment = "fixed";
-
 
   
     const labels = ["A", "B"];
